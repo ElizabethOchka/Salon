@@ -1,0 +1,27 @@
+﻿<Window x:Class="Лиза.Insert"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Лиза"
+        mc:Ignorable="d"
+        Title="Insert" Height="450" Width="800">
+    <Grid>
+        <Label Content="ФИО" HorizontalAlignment="Left" Height="35" Margin="10,71,0,0" VerticalAlignment="Top" Width="177"/>
+        <Label Content="Марка автомобиля" HorizontalAlignment="Left" Height="35" Margin="10,109,0,0" VerticalAlignment="Top" Width="177"/>
+        <Label Content="Модель автомобиля" HorizontalAlignment="Left" Height="35" Margin="10,149,0,0" VerticalAlignment="Top" Width="177"/>
+        <Label Content="Год выпуска автомобиля" HorizontalAlignment="Left" Height="35" Margin="10,189,0,0" VerticalAlignment="Top" Width="177"/>
+        <Label Content="Работы с автомобилем" HorizontalAlignment="Left" Height="35" Margin="10,229,0,0" VerticalAlignment="Top" Width="177"/>
+        <Label Content="Сумма работ " HorizontalAlignment="Left" Height="35" Margin="10,269,0,0" VerticalAlignment="Top" Width="177"/>
+        <TextBox Name="txtFio" HorizontalAlignment="Left" Height="35" Margin="192,71,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="227" PreviewTextInput="txtFio_PreviewTextInput" />
+        <TextBox x:Name="txtModel" HorizontalAlignment="Left" Height="35" Margin="192,149,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="227" />
+        <TextBox x:Name="txtYear"   HorizontalAlignment="Left" Height="35" Margin="192,189,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="227" PreviewTextInput="txtYear_PreviewTextInput"/>
+        <TextBox x:Name="txtWorks" HorizontalAlignment="Left" Height="35" Margin="192,229,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="227" />
+        <TextBox x:Name="txtSumma"  HorizontalAlignment="Left" Height="35" Margin="192,269,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="227" PreviewTextInput="txtSumma_PreviewTextInput" />
+        <Label Content="Дата заказа" HorizontalAlignment="Left" Height="35" Margin="10,309,0,0" VerticalAlignment="Top" Width="177"/>
+        <DatePicker Name="txtDate" SelectedDate="{Binding Date, StringFormat='dd/MM/yyyy'}" Margin="192,311,361,75"/>
+        <Button Name="btn_Insert" Content="Добавить запись" HorizontalAlignment="Left" Height="44" Margin="296,365,0,0" VerticalAlignment="Top" Width="181" Click="Insert_Click"/>
+        <Label Content="Добавление заказа " FontSize="28" HorizontalAlignment="Left" Height="56" Margin="247,0,0,0" VerticalAlignment="Top" Width="300"/>
+        <ComboBox Name="txtMake" HorizontalAlignment="Left" Height="33" Margin="192,111,0,0" VerticalAlignment="Top" Width="232"/>
+    </Grid>
+</Window>

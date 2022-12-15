@@ -1,0 +1,30 @@
+﻿<Window x:Class="Лиза.Update"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Лиза"
+        mc:Ignorable="d"
+        Title="Update" Height="450" Width="800">
+    <Grid>
+        <Label Name="l1" Content="ФИО" HorizontalAlignment="Left" Height="35" Margin="10,71,0,0" VerticalAlignment="Top" Width="177" Visibility="Hidden" />
+        <Label Name="l2" Content="Марка автомобиля" HorizontalAlignment="Left" Height="35" Margin="10,109,0,0" VerticalAlignment="Top" Width="177" Visibility="Hidden"/>
+        <Label Name="l3" Content="Модель автомобиля" HorizontalAlignment="Left" Height="35" Margin="10,149,0,0" VerticalAlignment="Top" Width="177" Visibility="Hidden"/>
+        <Label Name="l4" Content="Год выпуска автомобиля" HorizontalAlignment="Left" Height="35" Margin="10,189,0,0" VerticalAlignment="Top" Width="177" Visibility="Hidden"/>
+        <Label Name="l5" Content="Работы с автомобилем" HorizontalAlignment="Left" Height="35" Margin="10,229,0,0" VerticalAlignment="Top" Width="177" Visibility="Hidden"/>
+        <Label  Name="l6" Content="Сумма работ " HorizontalAlignment="Left" Height="35" Margin="10,269,0,0" VerticalAlignment="Top" Width="177" Visibility="Hidden"/>
+        <TextBox Name="txtFio_up" PreviewTextInput="txtFio_up_PreviewTextInput" HorizontalAlignment="Left" Height="35" Margin="192,71,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="227" Visibility="Hidden"  />
+        <TextBox x:Name="txtMake_up" HorizontalAlignment="Left" Height="35" Margin="192,111,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="227" Visibility="Hidden"  />
+        <TextBox x:Name="txtModel_up" HorizontalAlignment="Left" Height="35" Margin="192,149,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="227" Visibility="Hidden" />
+        <TextBox x:Name="txtYear_up"  PreviewTextInput="txtYear_up_PreviewTextInput" MaxLength="4" HorizontalAlignment="Left" Height="35" Margin="192,189,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="227" Visibility="Hidden" />
+        <TextBox x:Name="txtWorks_up" HorizontalAlignment="Left" Height="35" Margin="192,229,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="227" Visibility="Hidden"/>
+        <TextBox x:Name="txtSumma_up" PreviewTextInput="txtSumma_up_PreviewTextInput" HorizontalAlignment="Left" Height="35" Margin="192,269,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="227" Visibility="Hidden" />
+        <Label Name="l7" Content="Дата заказа" HorizontalAlignment="Left" Height="35" Margin="10,309,0,0" VerticalAlignment="Top" Width="177" Visibility="Visible"/>
+        <DatePicker Name="txtDate_up" SelectedDate="{Binding Date, StringFormat='dd/MM/yyyy'}" Margin="192,309,360,75"/>
+        <Button Name="btn_Update_save" Content="Сохранить запись" HorizontalAlignment="Left" Height="44" Margin="238,365,0,0" VerticalAlignment="Top" Width="181" Click="Update_save_Click" Visibility="Hidden"/>
+        <Label Content="Изменение заказа " FontSize="28" HorizontalAlignment="Left" Height="56" Margin="247,0,0,0" VerticalAlignment="Top" Width="300"/>
+        <DataGrid Name="dataGrid" HorizontalAlignment="Left" Height="289" VerticalAlignment="Top" Width="772" Margin="10,71,0,0" Visibility="Visible"/>
+        <Button x:Name="btn_Update" Content="Изменить запись" HorizontalAlignment="Left" Height="44" Margin="303,365,0,0" VerticalAlignment="Top" Width="181" Click="Insert_Click"  Visibility="Visible"/>
+
+    </Grid>
+</Window>
