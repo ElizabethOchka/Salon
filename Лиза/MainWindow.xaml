@@ -19,7 +19,7 @@
         <Button Content="Добавление,изменение,удаление" HorizontalAlignment="Left" Height="63" Margin="29,46,0,0" VerticalAlignment="Top" Width="220" Click="btn1_Click" Grid.RowSpan="2" Grid.Column="1"/>
         <Button Content="Показ заказов" HorizontalAlignment="Left" Height="63" Margin="29,114,0,0" VerticalAlignment="Top" Width="220" Click="btn2_Click" Grid.RowSpan="2" Grid.Column="1"/>
         <Button Content="Печать" HorizontalAlignment="Left" Height="63" Margin="29,182,0,0" VerticalAlignment="Top" Width="220" Click="btn3_Click" Grid.RowSpan="2" Grid.Column="1"/>
-        <!--<Button Name ="gameButton"  HorizontalAlignment="Left" Height="424" Margin="419,0,0,0" VerticalAlignment="Top" Width="368" Click="Button_Click" Grid.Column="1" Grid.Row="1" Background="White" BorderBrush="White"   >
+        <Button Name ="gameButton"  HorizontalAlignment="Left" Height="424" Margin="419,0,0,0" VerticalAlignment="Top" Width="368" Click="Button_Click" Grid.Column="1" Grid.Row="1" Background="White" BorderBrush="White"   >
             <Button.Style>
                 <Style TargetType="{x:Type Button}">
                     <Setter Property="Background" Value="Green"/>
@@ -35,6 +35,6 @@
                    
                 </Style>
             </Button.Style>
-        </Button>-->
+        </Button>
     </Grid>
 </Window>

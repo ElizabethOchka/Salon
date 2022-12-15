@@ -81,6 +81,27 @@
     <Compile Include="export.xaml.cs">
       <DependentUpon>export.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Game\Camera.cs" />
+    <Compile Include="Game\Enemy.xaml.cs">
+      <DependentUpon>Enemy.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Game\LevelGenerator.cs" />
+    <Compile Include="Game\Location.cs" />
+    <Compile Include="Game\Platform.xaml.cs">
+      <DependentUpon>Platform.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Game\Player.xaml.cs">
+      <DependentUpon>Player.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Game\Window_Game.xaml.cs">
+      <DependentUpon>Window_Game.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Game\Window_Gameover.xaml.cs">
+      <DependentUpon>Window_Gameover.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Game\Window_StartGame.xaml.cs">
+      <DependentUpon>Window_StartGame.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Insert.xaml.cs">
       <DependentUpon>Insert.xaml</DependentUpon>
     </Compile>
@@ -97,6 +118,30 @@
     <Page Include="export.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Game\Enemy.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Game\Platform.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Game\Player.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Game\Window_Game.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Game\Window_Gameover.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Game\Window_StartGame.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Insert.xaml">
       <SubType>Designer</SubType>
@@ -158,6 +203,19 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Database2.mdf</DependentUpon>
     </Content>
+    <Resource Include="Game\Sprites\Background.jpg" />
+    <Resource Include="Game\Sprites\Button_Exit.png" />
+    <Resource Include="Game\Sprites\Button_menu.png" />
+    <Resource Include="Game\Sprites\Button_play.png" />
+    <Resource Include="Game\Sprites\Button_playAgain.png" />
+    <Resource Include="Game\Sprites\Enemy_Blue.png" />
+    <Resource Include="Game\Sprites\gameover.png" />
+    <Resource Include="Game\Sprites\Label_Title.png" />
+    <Resource Include="Game\Sprites\Platform.png" />
+    <Resource Include="Game\Sprites\PlatformBroken_1.png" />
+    <Resource Include="Game\Sprites\PlatformBroken_2.png" />
+    <Resource Include="Game\Sprites\PlatformMoving.png" />
+    <Resource Include="Game\Sprites\Player.png" />
     <Resource Include="1.txt" />
   </ItemGroup>
   <ItemGroup>

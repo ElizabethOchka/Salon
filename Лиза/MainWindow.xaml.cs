@@ -1,4 +1,4 @@
-﻿//using DoodleJump;
+﻿using DoodleJump;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -42,15 +42,15 @@ namespace Лиза
             taskWindow.Show();
         }
 
-        //private void Button_Click(object sender, RoutedEventArgs e)
-        //{
-        //    Window_StartGame taskWindow = new Window_StartGame();
-        //    taskWindow.Show();
-        //}
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Window_StartGame taskWindow = new Window_StartGame();
+            taskWindow.Show();
+        }
         ///Коммит 1
         ///Commit2
-      
 
-        
+
+
     }
 }
